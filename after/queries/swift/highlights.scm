@@ -5,16 +5,7 @@
 (function_declaration
   name: (simple_identifier) @AlabasterDefinition)
 
-(class_declaration
-  name: (type_identifier) @AlabasterDefinition)
-
-(protocol_declaration
-  name: (type_identifier) @AlabasterDefinition)
-
-(typealias_declaration
-  name: (type_identifier) @AlabasterDefinition)
-
-;; Type references (when types/classes are used)
+;; Type references - all type identifiers get AlabasterDefinition
 (type_identifier) @AlabasterDefinition
 
 ;; Literals
