@@ -11,12 +11,6 @@
 (protocol_declaration
   name: (type_identifier) @AlabasterDefinition)
 
-(typealias_declaration
-  name: (type_identifier) @AlabasterDefinition)
-
-;; Type references (when types/classes are used)
-(type_identifier) @type
-
 ;; Literals
 (line_str_text) @AlabasterString
 (multi_line_str_text) @AlabasterString
