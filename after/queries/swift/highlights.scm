@@ -3,10 +3,19 @@
 
 ;; Definitions
 (function_declaration
-  (simple_identifier) @AlabasterDefinition)
+  name: (simple_identifier) @AlabasterDefinition)
+
+(class_declaration
+  name: (type_identifier) @AlabasterDefinition)
+
+(protocol_declaration
+  name: (type_identifier) @AlabasterDefinition)
 
 (protocol_function_declaration
   name: (simple_identifier) @AlabasterDefinition)
+
+(typealias_declaration
+  name: (type_identifier) @AlabasterDefinition)
 
 (init_declaration
   "init" @AlabasterDefinition)
