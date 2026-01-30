@@ -8,6 +8,25 @@
 ;; Type references - all type identifiers get AlabasterDefinition
 (type_identifier) @AlabasterDefinition
 
+;; Punctuation
+[
+  "."
+  ";"
+  ":"
+  ","
+] @AlabasterPunctuation
+
+[
+  "("
+  ")"
+  "["
+  "]"
+  "{"
+  "}"
+  "<"
+  ">"
+] @AlabasterPunctuation
+
 ;; Literals
 (line_str_text) @AlabasterString
 (multi_line_str_text) @AlabasterString
