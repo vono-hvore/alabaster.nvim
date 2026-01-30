@@ -8,12 +8,6 @@
 (class_declaration
   name: (type_identifier) @AlabasterDefinition)
 
-(struct_declaration
-  name: (type_identifier) @AlabasterDefinition)
-
-(enum_declaration
-  name: (type_identifier) @AlabasterDefinition)
-
 (protocol_declaration
   name: (type_identifier) @AlabasterDefinition)
 
@@ -21,8 +15,7 @@
   name: (type_identifier) @AlabasterDefinition)
 
 ;; Type references (when types/classes are used)
-(user_type
-  (type_identifier) @type)
+(type_identifier) @type
 
 ;; Literals
 (line_str_text) @AlabasterString
