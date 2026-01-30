@@ -15,7 +15,7 @@
   name: (type_identifier) @AlabasterDefinition)
 
 ;; Type references (when types/classes are used)
-(type_identifier) @type
+(type_identifier) @AlabasterDefinition
 
 ;; Literals
 (line_str_text) @AlabasterString
