@@ -257,9 +257,6 @@ if vim.o.background == "dark" then
         ["@parameter"] = { fg = ansi.white },
         ["@parameter.reference"] = { fg = ansi.white },
         ["@property"] = { fg = ansi.white },
-        ["@punctuation.delimiter"] = { fg = punct_fg },
-        ["@punctuation.bracket"] = { fg = "#bababa" },
-        ["@punctuation.special"] = { fg = punct_fg },
         ["@repeat"] = { fg = ansi.white },
         ["@string"] = { fg = string_fg },
         ["@string.regex"] = { bg = "#1d292b", fg = const_fg },
@@ -409,6 +406,9 @@ if vim.o.background == "dark" then
         ['@lsp.type.interface'] = { link = "@AlabasterDefinition" },
         ['@lsp.type.protocol'] = { link = "@AlabasterDefinition" },
         ['@lsp.type.typeParameter'] = { link = "@AlabasterDefinition" },
+        ['@punctuation.delimiter'] = { link = "@AlabasterPunctuation" },
+        ['@punctuation.bracket'] = { link = "@AlabasterPunctuation" },
+        ['@punctuation.special'] = { link = "@AlabasterPunctuation" },
   }
 else
     -- terminal colors
@@ -661,9 +661,6 @@ else
         ["@parameter"] = { fg = ansi.black },
         ["@parameter.reference"] = { fg = ansi.black },
         ["@property"] = { fg = ansi.black },
-        ["@punctuation.delimiter"] = { fg = punct_fg },
-        ["@punctuation.bracket"] = { fg = punct_fg },
-        ["@punctuation.special"] = { fg = punct_fg },
         ["@repeat"] = { fg = ansi.black },
         ["@string"] = { fg = string_fg },
         ["@string.regex"] = { bg = bg, fg = "#777777" },
@@ -809,6 +806,9 @@ else
         ['@lsp.type.interface'] = { link = "@AlabasterDefinition" },
         ['@lsp.type.protocol'] = { link = "@AlabasterDefinition" },
         ['@lsp.type.typeParameter'] = { link = "@AlabasterDefinition" },
+        ['@punctuation.delimiter'] = { link = "@AlabasterPunctuation" },
+        ['@punctuation.bracket'] = { link = "@AlabasterPunctuation" },
+        ['@punctuation.special'] = { link = "@AlabasterPunctuation" },
     }
 end
 
