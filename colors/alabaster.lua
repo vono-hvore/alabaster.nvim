@@ -390,7 +390,6 @@ if vim.o.background == "dark" then
         ["@lsp.type.function"] = { fg = fg },
         ["@lsp.type.method"] = { fg = fg },
         ["@lsp.type.selfKeyword"] = { fg = fg },
-        ["@lsp.type.type"] = { link = "@AlabasterDefinition" },
         ["@lsp.typemod.class.declaration"] = { fg = def_fg },
         ["@lsp.typemod.class.definition"] = { fg = def_fg },
         ["@lsp.typemod.enum.declaration"] = { fg = def_fg },
@@ -402,7 +401,15 @@ if vim.o.background == "dark" then
         ["@lsp.typemod.selfKeyword"] = { fg = fg },
         ["@lsp.typemod.struct.declaration"] = { fg = def_fg },
         ["@lsp.typemod.type.declaration"] = { fg = def_fg },
-    }
+
+        ["@lsp.type.type"] = { link = "@AlabasterDefinition" },
+        ['@lsp.type.class'] = { link = "@AlabasterDefinition" },
+        ['@lsp.type.struct'] = { link = "@AlabasterDefinition" },
+        ['@lsp.type.enum'] = { link = "@AlabasterDefinition" },
+        ['@lsp.type.interface'] = { link = "@AlabasterDefinition" },
+        ['@lsp.type.protocol'] = { link = "@AlabasterDefinition" },
+        ['@lsp.type.typeParameter'] = { link = "@AlabasterDefinition" },
+  }
 else
     -- terminal colors
     vim.g.terminal_color_0 = "#000000"
@@ -783,7 +790,6 @@ else
         ["@lsp.type.function"] = { fg = fg },
         ["@lsp.type.method"] = { fg = fg },
         ["@lsp.type.selfKeyword"] = { fg = fg },
-        ["@lsp.type.type"] = { link = "@AlabasterDefinition" },
         ["@lsp.typemod.class.declaration"] = { fg = def_fg },
         ["@lsp.typemod.class.definition"] = { fg = def_fg },
         ["@lsp.typemod.enum.declaration"] = { fg = def_fg },
@@ -795,6 +801,14 @@ else
         ["@lsp.typemod.selfKeyword"] = { fg = fg },
         ["@lsp.typemod.struct.declaration"] = { fg = def_fg },
         ["@lsp.typemod.type.declaration"] = { fg = def_fg },
+
+        ["@lsp.type.type"] = { link = "@AlabasterDefinition" },
+        ['@lsp.type.class'] = { link = "@AlabasterDefinition" },
+        ['@lsp.type.struct'] = { link = "@AlabasterDefinition" },
+        ['@lsp.type.enum'] = { link = "@AlabasterDefinition" },
+        ['@lsp.type.interface'] = { link = "@AlabasterDefinition" },
+        ['@lsp.type.protocol'] = { link = "@AlabasterDefinition" },
+        ['@lsp.type.typeParameter'] = { link = "@AlabasterDefinition" },
     }
 end
 
